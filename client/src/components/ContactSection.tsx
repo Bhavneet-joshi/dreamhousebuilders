@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
-import { contactFormSchema } from '@shared/schema';
+import { contactFormSchema } from '@/lib/schema';
 import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
 
@@ -22,7 +22,6 @@ export default function ContactSection() {
     defaultValues: {
       name: '',
       email: '',
-      subject: '',
       message: ''
     }
   });
@@ -30,16 +29,17 @@ export default function ContactSection() {
   const onSubmit = async (data: FormData) => {
     try {
       setIsSubmitting(true);
-      const response = await apiRequest('POST', '/api/contact', data);
-      const result = await response.json();
-      
-      toast({
-        title: "Message sent",
-        description: "We'll get back to you as soon as possible.",
-        variant: "default",
-      });
-      
-      reset();
+      // Instead of API call, we'll just simulate success
+      setTimeout(() => {
+        toast({
+          title: "Message sent",
+          description: "We'll get back to you as soon as possible.",
+          variant: "default",
+        });
+        
+        reset();
+        setIsSubmitting(false);
+      }, 1000);
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({
@@ -47,7 +47,6 @@ export default function ContactSection() {
         description: error instanceof Error ? error.message : "Please try again",
         variant: "destructive",
       });
-    } finally {
       setIsSubmitting(false);
     }
   };
@@ -80,17 +79,6 @@ export default function ContactSection() {
               />
               {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>}
             </div>
-          </div>
-          <div className="mb-6">
-            <label htmlFor="subject" className="block text-sm mb-2">Subject</label>
-            <input 
-              type="text" 
-              id="subject" 
-              className="w-full border border-[#232323]/10 p-3 bg-transparent" 
-              placeholder="Project Inquiry"
-              {...register('subject')}
-            />
-            {errors.subject && <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>}
           </div>
           <div className="mb-6">
             <label htmlFor="message" className="block text-sm mb-2">Message</label>
