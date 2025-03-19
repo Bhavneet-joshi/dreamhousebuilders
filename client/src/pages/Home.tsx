@@ -3,7 +3,6 @@ import IntroSection from "@/components/IntroSection";
 import StatsSection from "@/components/StatsSection";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import AboutSection from "@/components/AboutSection";
-import ProjectSection from "@/components/ProjectSection";
 import ContactSection from "@/components/ContactSection";
 import { useEffect } from "react";
 
@@ -19,7 +18,6 @@ export default function Home() {
       <StatsSection />
       <ProjectShowcase />
       <AboutSection />
-      <ProjectSection />
       <ContactSection />
     </>
   );
