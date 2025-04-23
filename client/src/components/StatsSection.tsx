@@ -10,19 +10,19 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
-    value: 400,
+    value: 40,
     label: "PROFESSIONALS",
     description: "Skilled professionals on our team. Our team brings together many professionals ready to take on any size challenge. We create a team that inspires trust.",
     duration: 2000
   },
   {
-    value: 18,
+    value: 8,
     label: "AWARDS",
     description: "Construction quality awards. Our commitment has been recognized with awards and certifications. We are constantly working to improve and refine our projects.",
     duration: 1500
   },
   {
-    value: 62,
+    value: 12,
     label: "CITIES",
     description: "Cities where we have left our mark. Our construction achievements span more than 62 cities. We are committed to contributing to the cities development.",
     duration: 1700

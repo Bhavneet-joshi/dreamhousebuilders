@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold mb-4">NOVA CONSTRUCT</h3>
+            <h3 className="font-semibold mb-4">DREAM HOUSE BUILDERS LTD</h3>
             <p className="text-sm leading-relaxed">
               Creating iconic buildings and spaces that transform cities and improve lives through thoughtful, sustainable design.
             </p>
@@ -38,7 +38,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-12 pt-6 border-t border-[rgba(0,0,0,0.1)] text-sm flex flex-col md:flex-row justify-between items-center">
-          <p>&copy; {new Date().getFullYear()} Nova Construct. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} DREAM HOUSE BUILDERS LTD. All rights reserved.</p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-[#917b53] transition">Privacy Policy</a>
             <a href="#" className="hover:text-[#917b53] transition">Terms of Service</a>

@@ -67,7 +67,7 @@ export class MemStorage implements IStorage {
   
   async getProjectsByCategory(category: string): Promise<Project[]> {
     return Array.from(this.projects.values()).filter(
-      (project) => project.category === category
+      (project) => project.category.toLowerCase() === category.toLowerCase()
     );
   }
   

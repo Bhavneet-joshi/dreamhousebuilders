@@ -3,7 +3,6 @@ import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import { z } from 'zod';
 import { contactFormSchema } from '@/lib/schema';
-import { apiRequest } from '@/lib/queryClient';
 import { useToast } from '@/hooks/use-toast';
 
 type FormData = z.infer<typeof contactFormSchema>;
@@ -11,6 +10,7 @@ type FormData = z.infer<typeof contactFormSchema>;
 export default function ContactSection() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [result, setResult] = useState("");
   
   const { 
     register, 
@@ -29,24 +29,49 @@ export default function ContactSection() {
   const onSubmit = async (data: FormData) => {
     try {
       setIsSubmitting(true);
-      // Instead of API call, we'll just simulate success
-      setTimeout(() => {
+      setResult("Sending....");
+      
+      // Create FormData object
+      const formData = new FormData();
+      formData.append("name", data.name);
+      formData.append("email", data.email);
+      formData.append("message", data.message);
+      formData.append("access_key", "e6abf339-ba0f-420c-9b53-96b080b3dc0f");
+
+      // Submit to Web3Forms
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setResult("Form Submitted Successfully");
         toast({
           title: "Message sent",
           description: "We'll get back to you as soon as possible.",
           variant: "default",
         });
-        
         reset();
-        setIsSubmitting(false);
-      }, 1000);
+      } else {
+        console.log("Error", result);
+        setResult(result.message || "Something went wrong");
+        toast({
+          title: "Failed to send message",
+          description: result.message || "Please try again",
+          variant: "destructive",
+        });
+      }
     } catch (error) {
       console.error('Error submitting form:', error);
+      setResult("An error occurred. Please try again.");
       toast({
         title: "Failed to send message",
         description: error instanceof Error ? error.message : "Please try again",
         variant: "destructive",
       });
+    } finally {
       setIsSubmitting(false);
     }
   };
@@ -98,6 +123,11 @@ export default function ContactSection() {
           >
             {isSubmitting ? 'Sending...' : 'Send Message'}
           </button>
+          {result && (
+            <p className={`mt-4 ${result.includes("Successfully") ? "text-green-600" : "text-amber-600"}`}>
+              {result}
+            </p>
+          )}
         </form>
       </div>
       <div className="p-8 md:p-12">
@@ -106,28 +136,18 @@ export default function ContactSection() {
           <div>
             <h3 className="font-medium mb-4">HEADQUARTERS</h3>
             <address className="not-italic mb-6">
-              VIA NAZIONALE 73B<br />
-              MILAN, ITALY 20123<br />
-              +39 02 1234 5678
+            10 destino court conifer grove Takanini 
+            Auckland<br />
+            2112, New Zealand<br />
+            +64 210520060
             </address>
             
-            <h3 className="font-medium mb-4">LONDON OFFICE</h3>
-            <address className="not-italic">
-              MAIN STREET 17<br />
-              LONDON, UK 2VT4D3<br />
-              +44 20 1234 5678
-            </address>
+           
           </div>
           <div>
-            <h3 className="font-medium mb-4">SYDNEY OFFICE</h3>
-            <address className="not-italic mb-6">
-              92 THE AVENUE<br />
-              SYDNEY, AUSTRALIA<br />
-              +61 2 1234 5678
-            </address>
             
             <h3 className="font-medium mb-4">CONTACT US</h3>
-            <p className="mb-4">INFO@NOVACONSTRUCT.COM</p>
+            <p className="mb-4">dreamhousebuilders@outlook.co.nz</p>
             <div className="flex space-x-4">
               <a href="#" className="hover:text-[#917b53] transition">LINKEDIN</a>
               <a href="#" className="hover:text-[#917b53] transition">TWITTER</a>

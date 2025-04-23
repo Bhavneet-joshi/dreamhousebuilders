@@ -13,6 +13,15 @@ const navigationItems = [
     ]
   },
   {
+    name: "PROJECTS",
+    path: "/projects",
+    dropdown: [
+      { name: "Commercial", path: "/projects#commercial" },
+      { name: "Residential", path: "/projects#residential" },
+      { name: "Industrial", path: "/projects#industrial" }
+    ]
+  },
+  {
     name: "CONTACT",
     path: "/contact",
     dropdown: [
@@ -47,7 +56,7 @@ export default function Header() {
           {/* Logo */}
           <div className="col-span-6 md:col-span-3 py-4 px-6 border-r border-[rgba(0,0,0,0.1)] flex items-center">
             <Link href="/" className="font-semibold">
-              NOVA CONSTRUCT
+              DREAM HOUSE BUILDERS LTD
             </Link>
           </div>
 

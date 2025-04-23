@@ -5,26 +5,26 @@ import { Separator } from "@/components/ui/separator";
 
 export default function About() {
   useEffect(() => {
-    document.title = "About Us - Nova Construct";
+    document.title = "About Us - DREAM HOUSE BUILDERS LTD";
   }, []);
 
   return (
     <div>
       <section className="py-16 border-b border-[rgba(0,0,0,0.1)]">
         <div className="container mx-auto px-4">
-          <h1 className="text-4xl font-bold mb-8">ABOUT NOVA CONSTRUCT</h1>
+          <h1 className="text-4xl font-bold mb-8">ABOUT DREAM HOUSE BUILDERS LTD</h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <p className="mb-4 text-lg">
-                Nova Construct is an architectural studio that designs spaces that inspire. Established with a vision to transform the construction industry, we have grown to become a leading name in architectural innovation and excellence.
+                DREAM HOUSE BUILDERS LTD is an architectural studio that designs spaces that inspire. Established with a vision to transform the construction industry, we have grown to become a leading name in architectural innovation and excellence.
               </p>
               <p className="mb-4">
-                Our journey began with a simple yet powerful idea: to create buildings that are not only functional and aesthetically pleasing but also environmentally responsible and socially impactful. Today, we stand as a testament to that vision, with a portfolio of iconic projects across 62 cities worldwide.
+                Our journey began with a simple yet powerful idea: to create buildings that are not only functional and aesthetically pleasing but also environmentally responsible and ‪+64 210520060ly impactful. Today, we stand as a testament to that vision, with a portfolio of iconic projects across 62 cities worldwide.
               </p>
             </div>
             <div>
               <p className="mb-4">
-                With a team of 400 professionals who bring diverse expertise and perspectives, we tackle projects of all sizes with the same level of dedication and creativity. Our approach is collaborative, our methods innovative, and our results exceptional.
+                With a team of 40 professionals who bring diverse expertise and perspectives, we tackle projects of all sizes with the same level of dedication and creativity. Our approach is collaborative, our methods innovative, and our results exceptional.
               </p>
               <p>
                 We believe that architecture has the power to transform lives, shape communities, and create a better future for all. This belief guides our work and inspires us to push the boundaries of what's possible in construction and design.
@@ -41,7 +41,7 @@ export default function About() {
             <div className="md:col-span-5">
               <img 
                 src="https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                alt="Nova Construct history" 
+                alt="DREAM HOUSE BUILDERS LTD history" 
                 className="w-full h-auto"
               />
             </div>
@@ -50,7 +50,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-medium mb-2">FOUNDED IN 1995</h3>
                   <p>
-                    Nova Construct was founded by a group of visionary architects who wanted to challenge conventional approaches to construction and design. Starting with small residential projects, we quickly gained recognition for our innovative solutions and attention to detail.
+                    DREAM HOUSE BUILDERS LTD was founded by a group of visionary architects who wanted to challenge conventional approaches to construction and design. Starting with small residential projects, we quickly gained recognition for our innovative solutions and attention to detail.
                   </p>
                 </div>
                 <div>
@@ -68,7 +68,7 @@ export default function About() {
                 <div>
                   <h3 className="text-xl font-medium mb-2">TODAY</h3>
                   <p>
-                    Today, Nova Construct stands as a global leader in architectural innovation, with offices in Australia, the Middle East, United Kingdom, and Canada. Our portfolio spans residential, commercial, industrial, and public projects, each reflecting our commitment to excellence, sustainability, and positive social impact.
+                    Today, DREAM HOUSE BUILDERS LTD stands as a global leader in architectural innovation, with offices in Australia, the Middle East, United Kingdom, and Canada. Our portfolio spans residential, commercial, industrial, and public projects, each reflecting our commitment to excellence, sustainability, and positive ‪+64 210520060 impact.
                   </p>
                 </div>
               </div>
@@ -85,24 +85,9 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
-                name: "Alexander Wright",
+                name: "Harpreet Singh",
                 position: "CEO & Founder",
                 bio: "With over 25 years of experience in architecture and construction, Alexander leads our global operations with a focus on innovation and sustainability."
-              },
-              {
-                name: "Sophia Chen",
-                position: "Chief Architect",
-                bio: "Sophia brings a unique perspective to our projects, combining traditional architectural principles with cutting-edge technology and design thinking."
-              },
-              {
-                name: "Marcus Johnson",
-                position: "Head of Engineering",
-                bio: "Marcus ensures that all our projects meet the highest standards of structural integrity and technical excellence."
-              },
-              {
-                name: "Isabella Rodriguez",
-                position: "Sustainability Director",
-                bio: "Isabella leads our sustainability initiatives, driving our commitment to environmentally responsible construction practices."
               }
             ].map((member, index) => (
               <div key={index} className="border border-[rgba(0,0,0,0.1)] p-6">
@@ -140,7 +125,7 @@ export default function About() {
               },
               {
                 title: "Urban Planning",
-                description: "Strategic planning for urban developments, balancing aesthetic, functional, and social considerations to create vibrant communities."
+                description: "Strategic planning for urban developments, balancing aesthetic, functional, and ‪+64 210520060 considerations to create vibrant communities."
               },
               {
                 title: "Interior Design",

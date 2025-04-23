@@ -1,6 +1,6 @@
-# Nova Construct Website
+# DREAM HOUSE BUILDERS LTD Website
 
-A modern, responsive website for Nova Construct architectural studio built with React, Vite, and TailwindCSS.
+A modern, responsive website for DREAM HOUSE BUILDERS LTD architectural studio built with React, Vite, and TailwindCSS.
 
 ## Features
 

@@ -13,3 +13,17 @@ export const contactFormSchema = z.object({
 });
 
 export type ContactFormValues = z.infer<typeof contactFormSchema>; 
+
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  category: string;
+  imageUrl?: string;
+}
+
+export interface ContactForm {
+  name: string;
+  email: string;
+  message: string;
+}

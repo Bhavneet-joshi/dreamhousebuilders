@@ -2,10 +2,8 @@ import { Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
 
 export default function AboutSection() {
   const socialLinks = [
-    { name: "LINKEDIN", icon: <Linkedin className="w-4 h-4 mr-2" />, url: "#" },
-    { name: "TWITTER", icon: <Twitter className="w-4 h-4 mr-2" />, url: "#" },
-    { name: "INSTAGRAM", icon: <Instagram className="w-4 h-4 mr-2" />, url: "#" },
-    { name: "FACEBOOK", icon: <Facebook className="w-4 h-4 mr-2" />, url: "#" }
+    { name: "INSTAGRAM", icon: <Instagram className="w-4 h-4 mr-2" />, url: "https://www.instagram.com/dreamhouse_builders_nz" },
+    { name: "FACEBOOK", icon: <Facebook className="w-4 h-4 mr-2" />, url: "https://www.facebook.com/dream.house.builders.ltd" }
   ];
 
   return (
@@ -27,7 +25,7 @@ export default function AboutSection() {
           <div className="md:col-span-8">
             <div className="mb-6">
               <span className="text-xs">(01)</span>
-              <p>NOVA CONSTRUCT IS AN ARCHITECTURAL STUDIO THAT DESIGNS SPACES THAT INSPIRE.</p>
+              <p>DREAM HOUSE BUILDERS LTD IS AN ARCHITECTURAL STUDIO THAT DESIGNS SPACES THAT INSPIRE.</p>
             </div>
             <div className="mb-6">
               <span className="text-xs">(02)</span>

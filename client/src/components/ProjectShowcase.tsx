@@ -1,49 +1,42 @@
-import { Link } from "wouter";
+import { useState } from "react";
+import { Project } from "@shared/schema";
 
 export default function ProjectShowcase() {
-   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 border-b border-[rgba(0,0,0,0.1)]">
-      <div className="h-96 md:h-auto">
-        <div className="grid grid-cols-2 h-full">
-          <div className="col-span-1 h-full relative border-r border-[rgba(0,0,0,0.1)]">
-            <img 
-              src="https://images.unsplash.com/photo-1515263487990-61b07816b324?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-              alt="Modern building exterior" 
-              className="w-full h-full object-cover"
+  const [projects] = useState<Project[]>([
+    {
+      id: 1,
+      title: "Modern Office Complex",
+      description: "A state-of-the-art office building with sustainable features",
+      category: "commercial",
+      imageUrl: "/assets/projects/office.jpg"
+    },
+    {
+      id: 2,
+      title: "Luxury Apartments",
+      description: "High-end residential complex with premium amenities",
+      category: "residential",
+      imageUrl: "/assets/projects/apartment.jpg"
+    }
+  ]);
+
+  return (
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((project) => (
+        <div key={project.id} className="group relative overflow-hidden rounded-lg">
+          <div className="aspect-w-16 aspect-h-9">
+            <img
+              src={project.imageUrl || '/assets/projects/placeholder.jpg'}
+              alt={project.title}
+              className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
             />
           </div>
-          <div className="col-span-1 h-full grid grid-rows-2">
-            <div className="row-span-1 border-b border-[rgba(0,0,0,0.1)] relative">
-              <img 
-                src="https://images.unsplash.com/photo-1479839672679-a46483c0e7c8?q=80&w=2020&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Architectural detail" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="row-span-1 relative">
-              <img 
-                src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-                alt="Modern interior" 
-                className="w-full h-full object-cover"
-              />
-            </div>
+          <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
+            <p className="text-white/80">{project.description}</p>
+            <span className="text-white/60 mt-2 uppercase text-sm">{project.category}</span>
           </div>
         </div>
-      </div>
-      <div className="p-8 md:p-12 flex flex-col justify-center">
-        <h2 className="text-2xl font-semibold mb-8">CONVENIENCE AND COMFORT</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <p className="text-base leading-relaxed">
-            Luxurious interiors and functional spaces will make the home not just a place to live, but an oasis of comfort, where every detail has been thoughtfully designed for your convenience.
-          </p>
-          <p className="text-base leading-relaxed">
-            Intelligent control systems allow you to control the atmosphere of your home with a single touch. Adjust light, temperature and security to create the perfect space for your life.
-          </p>
-        </div>
-        <div className="mt-8">
-          <Link href="/contact" className="inline-block bg-[#232323] text-white py-3 px-6 hover:bg-[#232323]/90 transition">Contact Us</Link>
-        </div>
-      </div>
-    </section>
+      ))}
+    </div>
   );
 }

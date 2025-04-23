@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 export default function Home() {
   useEffect(() => {
-    document.title = "Nova Construct - Expert Construction Services";
+    document.title = "DREAM HOUSE BUILDERS LTD - Expert Construction Services";
   }, []);
 
   return (
