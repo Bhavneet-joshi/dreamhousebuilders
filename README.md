@@ -1,8 +1,11 @@
+<<<<<<< HEAD
 # DREAM HOUSE BUILDERS LTD Website
+=======
+https://cons-ruddy.vercel.app/
+# Nova Construct Website
+>>>>>>> 41be55d29c786ee9f90e6cb15db5effcf0d8a045
 
 A modern, responsive website for DREAM HOUSE BUILDERS LTD architectural studio built with React, Vite, and TailwindCSS.
-
-Live site: https://cons-ruddy.vercel.app/
 
 ## Features
 
@@ -63,4 +66,4 @@ If you prefer to deploy manually using the Vercel CLI:
 
 3. Follow the on-screen instructions to complete the deployment
 
-The site will be deployed and you'll receive a URL to your live site.
+The site will be deployed and you'll receive a URL to your live site. 
