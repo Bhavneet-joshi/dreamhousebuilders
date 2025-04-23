@@ -2,6 +2,8 @@
 
 A modern, responsive website for DREAM HOUSE BUILDERS LTD architectural studio built with React, Vite, and TailwindCSS.
 
+Live site: https://cons-ruddy.vercel.app/
+
 ## Features
 
 - Modern UI design
@@ -61,4 +63,4 @@ If you prefer to deploy manually using the Vercel CLI:
 
 3. Follow the on-screen instructions to complete the deployment
 
-The site will be deployed and you'll receive a URL to your live site. 
+The site will be deployed and you'll receive a URL to your live site.
