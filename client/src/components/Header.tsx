@@ -2,7 +2,18 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 
-const navigationItems = [
+interface DropdownItem {
+  name: string;
+  path: string;
+}
+
+interface NavigationItem {
+  name: string;
+  path: string;
+  dropdown: DropdownItem[];
+}
+
+const navigationItems: NavigationItem[] = [
   {
     name: "ABOUT US",
     path: "/about",
