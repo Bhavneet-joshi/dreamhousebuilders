@@ -36,10 +36,10 @@ export default function Contact() {
             </div>
             <div className="border border-[rgba(0,0,0,0.1)] p-6">
               <h3 className="text-xl font-semibold mb-4">‪Social Media</h3>
-              <p className="mb-4">Connect with us on ‪Social Media for the latest updates, project showcases, and industry insights.</p>
+              <p className="mb-4">Connect with us on social media for the latest updates, project showcases, and industry insights.</p>
               <div className="flex space-x-4">
-                <a href="https://www.instagram.com/dreamhouse_builders_nz" className="hover:text-[#917b53] transition">Instagram</a>
-                <a href="https://www.facebook.com/dream.house.builders.ltd" className="hover:text-[#917b53] transition">Facebook</a>
+                <a href="https://www.instagram.com/dreamhouse_builders_nz" target="_blank" rel="noopener noreferrer" className="hover:text-[#917b53] transition">Instagram</a>
+                <a href="https://www.facebook.com/dream.house.builders.ltd" target="_blank" rel="noopener noreferrer" className="hover:text-[#917b53] transition">Facebook</a>
               </div>
             </div>
           </div>
