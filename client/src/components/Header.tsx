@@ -106,7 +106,7 @@ export default function Header() {
                 </button>
                 {activeDropdown === item.name && (
                   <div className="bg-[#f5f2eb] pl-8">
-                    {item.dropdown.map((dropdownItem) => (
+                    {item.dropdown?.map((dropdownItem) => (
                       <Link 
                         key={dropdownItem.path} 
                         href={dropdownItem.path} 
