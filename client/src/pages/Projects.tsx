@@ -5,61 +5,61 @@ import { Project } from "@shared/schema";
 const fallbackProjects: Project[] = [
   {
     id: 1,
-    title: "Modern Residential Tower",
-    category: "Residential",
-    description: "Luxury residential tower with 200 apartments featuring smart home technology and sustainable design elements.",
-    imageUrl: "https://images.unsplash.com/photo-1606946887361-78feb162a525?q=80&w=1000",
-    location: "Sydney, Australia",
-    year: 2022,
+    title: "Victorian Manor Restoration",
+    category: "Historic Restoration",
+    description: "Complete restoration of a 19th-century Victorian manor, including period-accurate woodwork, detailed trim restoration, and historical color matching.",
+    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000",
+    location: "Auckland, New Zealand",
+    year: 2023,
     featured: true
   },
   {
     id: 2,
-    title: "Urban Office Complex",
-    category: "Commercial",
-    description: "State-of-the-art office complex designed for modern work environments with flexible spaces and collaborative areas.",
-    imageUrl: "https://images.unsplash.com/photo-1554041243-9dad330c1d1d?q=80&w=1000",
-    location: "London, UK",
-    year: 2021,
+    title: "Heritage Staircase Reconstruction",
+    category: "Custom Woodwork",
+    description: "Hand-crafted reproduction of a heritage staircase, featuring intricate balustrades and custom millwork to match the original 1920s design.",
+    imageUrl: "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1000",
+    location: "Wellington, New Zealand",
+    year: 2023,
     featured: true
   },
   {
     id: 3,
-    title: "Sustainable Shopping Center",
-    category: "Commercial",
-    description: "Eco-friendly shopping center with solar panels, rainwater harvesting, and energy-efficient systems throughout.",
-    imageUrl: "https://images.unsplash.com/photo-1617900906639-cab7adceb499?q=80&w=1000",
-    location: "Milan, Italy",
+    title: "Antique Furniture Collection",
+    category: "Furniture Restoration",
+    description: "Meticulous restoration of a collection of 18th-century furniture pieces, including detailed veneer work and traditional finishing techniques.",
+    imageUrl: "https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=1000",
+    location: "Christchurch, New Zealand",
     year: 2023,
     featured: true
   },
   {
     id: 4,
-    title: "Luxury Villa Complex",
-    category: "Residential",
-    description: "Premium villa complex with private gardens, swimming pools, and smart home integration for ultimate comfort.",
-    imageUrl: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=1000",
-    location: "Dubai, UAE",
-    year: 2022,
+    title: "Colonial Homestead Revival",
+    category: "Historic Restoration",
+    description: "Comprehensive restoration of a colonial-era homestead, including structural timber repairs and authentic period detailing.",
+    imageUrl: "https://images.unsplash.com/photo-1464146072230-91cabc968266?q=80&w=1000",
+    location: "Hamilton, New Zealand",
+    year: 2023,
     featured: false
   },
   {
     id: 5,
-    title: "Industrial Production Facility",
-    category: "Industrial",
-    description: "Modern industrial facility with advanced automation systems and sustainable manufacturing processes.",
-    imageUrl: "https://images.unsplash.com/photo-1521798928596-9fae7e05bcf8?q=80&w=1000",
-    location: "Toronto, Canada",
-    year: 2021,
+    title: "Bespoke Library Installation",
+    category: "Custom Woodwork",
+    description: "Custom-designed and hand-crafted floor-to-ceiling library with traditional joinery techniques and built-in ladder system.",
+    imageUrl: "https://images.unsplash.com/photo-1507467747992-27c2c988d0f0?q=80&w=1000",
+    location: "Dunedin, New Zealand",
+    year: 2023,
     featured: false
   },
   {
     id: 6,
-    title: "Urban Public Library",
-    category: "Public",
-    description: "Contemporary public library with open spaces, digital resources, and community gathering areas.",
-    imageUrl: "https://images.unsplash.com/photo-1562932831-afcfe48b5786?q=80&w=1000",
-    location: "Berlin, Germany",
+    title: "Heritage Window Restoration",
+    category: "Architectural Elements",
+    description: "Restoration of original sash windows and frames in a heritage-listed building, including custom molding reproduction and glazing.",
+    imageUrl: "https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?q=80&w=1000",
+    location: "Tauranga, New Zealand",
     year: 2023,
     featured: false
   }
@@ -93,44 +93,44 @@ export default function Projects() {
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8">Our Projects</h1>
+      <h1 className="text-4xl font-bold mb-8 text-[#917b53]">Our Restoration & Carpentry Projects</h1>
       
-      <div className="flex gap-4 mb-8">
+      <div className="flex flex-wrap gap-4 mb-8">
         <button
-          className={`px-4 py-2 rounded-lg ${!selectedCategory ? 'bg-primary text-white' : 'bg-gray-100'}`}
+          className={`px-4 py-2 rounded-lg ${!selectedCategory ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
           onClick={() => setSelectedCategory(null)}
         >
           All
         </button>
         <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Residential' ? 'bg-primary text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Residential')}
+          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Historic Restoration' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
+          onClick={() => setSelectedCategory('Historic Restoration')}
         >
-          Residential
+          Historic Restoration
         </button>
         <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Commercial' ? 'bg-primary text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Commercial')}
+          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Custom Woodwork' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
+          onClick={() => setSelectedCategory('Custom Woodwork')}
         >
-          Commercial
+          Custom Woodwork
         </button>
         <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Industrial' ? 'bg-primary text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Industrial')}
+          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Furniture Restoration' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
+          onClick={() => setSelectedCategory('Furniture Restoration')}
         >
-          Industrial
+          Furniture Restoration
         </button>
         <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Public' ? 'bg-primary text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Public')}
+          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Architectural Elements' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
+          onClick={() => setSelectedCategory('Architectural Elements')}
         >
-          Public
+          Architectural Elements
         </button>
       </div>
 
       {loading && (
         <div className="flex justify-center items-center py-12">
-          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-primary"></div>
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-[#917b53]"></div>
         </div>
       )}
 
