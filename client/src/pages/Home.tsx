@@ -4,6 +4,8 @@ import StatsSection from "@/components/StatsSection";
 import ProjectShowcase from "@/components/ProjectShowcase";
 import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
+import TestimonialsSection from "@/components/TestimonialsSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -17,6 +19,8 @@ export default function Home() {
       <IntroSection />
       <StatsSection />
       <ProjectShowcase />
+      <WhyChooseUsSection />
+      <TestimonialsSection />
       <AboutSection />
       <ContactSection />
     </>

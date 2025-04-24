@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Project } from "@shared/schema";
+import { Link } from "wouter";
 
 // Fallback projects data
 const fallbackProjects: Project[] = [
@@ -8,7 +9,7 @@ const fallbackProjects: Project[] = [
     title: "Victorian Manor Restoration",
     category: "Historic Restoration",
     description: "Complete restoration of a 19th-century Victorian manor, including period-accurate woodwork, detailed trim restoration, and historical color matching.",
-    imageUrl: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1000",
+    imageUrl: "/attached_assets/m1.jpg",
     location: "Auckland, New Zealand",
     year: 2023,
     featured: true
@@ -18,7 +19,7 @@ const fallbackProjects: Project[] = [
     title: "Heritage Staircase Reconstruction",
     category: "Custom Woodwork",
     description: "Hand-crafted reproduction of a heritage staircase, featuring intricate balustrades and custom millwork to match the original 1920s design.",
-    imageUrl: "https://images.unsplash.com/photo-1618220179428-22790b461013?q=80&w=1000",
+    imageUrl: "/attached_assets/m2.jpg",
     location: "Wellington, New Zealand",
     year: 2023,
     featured: true
@@ -28,7 +29,7 @@ const fallbackProjects: Project[] = [
     title: "Antique Furniture Collection",
     category: "Furniture Restoration",
     description: "Meticulous restoration of a collection of 18th-century furniture pieces, including detailed veneer work and traditional finishing techniques.",
-    imageUrl: "https://images.unsplash.com/photo-1581428982868-e410dd047a90?q=80&w=1000",
+    imageUrl: "/attached_assets/m3.jpg",
     location: "Christchurch, New Zealand",
     year: 2023,
     featured: true
@@ -38,7 +39,7 @@ const fallbackProjects: Project[] = [
     title: "Colonial Homestead Revival",
     category: "Historic Restoration",
     description: "Comprehensive restoration of a colonial-era homestead, including structural timber repairs and authentic period detailing.",
-    imageUrl: "https://images.unsplash.com/photo-1464146072230-91cabc968266?q=80&w=1000",
+    imageUrl: "/attached_assets/m4.jpg",
     location: "Hamilton, New Zealand",
     year: 2023,
     featured: false
@@ -48,7 +49,7 @@ const fallbackProjects: Project[] = [
     title: "Bespoke Library Installation",
     category: "Custom Woodwork",
     description: "Custom-designed and hand-crafted floor-to-ceiling library with traditional joinery techniques and built-in ladder system.",
-    imageUrl: "https://images.unsplash.com/photo-1507467747992-27c2c988d0f0?q=80&w=1000",
+    imageUrl: "/attached_assets/m5.jpg",
     location: "Dunedin, New Zealand",
     year: 2023,
     featured: false
@@ -58,8 +59,48 @@ const fallbackProjects: Project[] = [
     title: "Heritage Window Restoration",
     category: "Architectural Elements",
     description: "Restoration of original sash windows and frames in a heritage-listed building, including custom molding reproduction and glazing.",
-    imageUrl: "https://images.unsplash.com/photo-1509644851169-2acc08aa25b5?q=80&w=1000",
+    imageUrl: "/attached_assets/m6.jpg",
     location: "Tauranga, New Zealand",
+    year: 2023,
+    featured: false
+  },
+  {
+    id: 7,
+    title: "Period Door Refinishing",
+    category: "Architectural Elements",
+    description: "Expert refinishing of original period doors, including hardware restoration and custom panel repair.",
+    imageUrl: "/attached_assets/m7.jpg",
+    location: "Napier, New Zealand",
+    year: 2023,
+    featured: false
+  },
+  {
+    id: 8,
+    title: "Historic Fireplace Restoration",
+    category: "Historic Restoration",
+    description: "Complete restoration of a Victorian-era fireplace, including tile repair, mantel refinishing, and flue inspection.",
+    imageUrl: "/attached_assets/m8.jpg",
+    location: "Nelson, New Zealand",
+    year: 2023,
+    featured: false
+  },
+  {
+    id: 9,
+    title: "Custom Kitchen Cabinetry",
+    category: "Custom Woodwork",
+    description: "Hand-crafted kitchen cabinetry with traditional joinery techniques and custom hardware selection.",
+    imageUrl: "/attached_assets/m9.jpg",
+    location: "Whangarei, New Zealand",
+    year: 2023,
+    featured: false
+  },
+  {
+    id: 10,
+    title: "Antique Table Restoration",
+    category: "Furniture Restoration",
+    description: "Complete restoration of a family heirloom dining table, including leg repair, surface refinishing, and extension mechanism overhaul.",
+    imageUrl: "/attached_assets/m10.jpg",
+    location: "Palmerston North, New Zealand",
     year: 2023,
     featured: false
   }
@@ -69,6 +110,7 @@ export default function Projects() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     // Simulate loading
@@ -77,55 +119,74 @@ export default function Projects() {
     // Use a timeout to simulate network delay
     setTimeout(() => {
       // Filter projects by category if selected
+      let filteredProjects = fallbackProjects;
+      
       if (selectedCategory) {
-        setProjects(fallbackProjects.filter(project => 
+        filteredProjects = filteredProjects.filter(project => 
           project.category.toLowerCase() === selectedCategory.toLowerCase()
-        ));
-      } else {
-        setProjects(fallbackProjects);
+        );
       }
       
+      // Filter by search term if provided
+      if (searchTerm) {
+        filteredProjects = filteredProjects.filter(project => 
+          project.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          project.description.toLowerCase().includes(searchTerm.toLowerCase()) ||
+          project.location.toLowerCase().includes(searchTerm.toLowerCase())
+        );
+      }
+      
+      setProjects(filteredProjects);
       setLoading(false);
     }, 500);
-  }, [selectedCategory]);
+  }, [selectedCategory, searchTerm]);
 
-  const filteredProjects = projects;
+  const categories = Array.from(new Set(fallbackProjects.map(project => project.category)));
 
   return (
     <div className="container mx-auto px-4 py-16">
-      <h1 className="text-4xl font-bold mb-8 text-[#917b53]">Our Restoration & Carpentry Projects</h1>
+      <div className="max-w-3xl mx-auto text-center mb-12">
+        <h1 className="text-4xl font-bold mb-6 text-[#917b53]">Our Restoration & Carpentry Projects</h1>
+        <p className="text-gray-600 mb-8">
+          Explore our portfolio of historic restoration and custom woodwork projects. Each project represents our commitment to craftsmanship, attention to detail, and preserving the beauty of heritage architecture.
+        </p>
+        
+        <div className="relative max-w-md mx-auto">
+          <input
+            type="text"
+            placeholder="Search projects..."
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-[#917b53] focus:border-transparent"
+            value={searchTerm}
+            onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <svg 
+            xmlns="http://www.w3.org/2000/svg" 
+            className="h-5 w-5 absolute right-3 top-1/2 transform -translate-y-1/2 text-gray-400" 
+            fill="none" 
+            viewBox="0 0 24 24" 
+            stroke="currentColor"
+          >
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+          </svg>
+        </div>
+      </div>
       
-      <div className="flex flex-wrap gap-4 mb-8">
+      <div className="flex flex-wrap gap-4 mb-8 justify-center">
         <button
           className={`px-4 py-2 rounded-lg ${!selectedCategory ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
           onClick={() => setSelectedCategory(null)}
         >
-          All
+          All Projects
         </button>
-        <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Historic Restoration' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Historic Restoration')}
-        >
-          Historic Restoration
-        </button>
-        <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Custom Woodwork' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Custom Woodwork')}
-        >
-          Custom Woodwork
-        </button>
-        <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Furniture Restoration' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Furniture Restoration')}
-        >
-          Furniture Restoration
-        </button>
-        <button
-          className={`px-4 py-2 rounded-lg ${selectedCategory === 'Architectural Elements' ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
-          onClick={() => setSelectedCategory('Architectural Elements')}
-        >
-          Architectural Elements
-        </button>
+        {categories.map(category => (
+          <button
+            key={category}
+            className={`px-4 py-2 rounded-lg ${selectedCategory === category ? 'bg-[#917b53] text-white' : 'bg-gray-100'}`}
+            onClick={() => setSelectedCategory(category)}
+          >
+            {category}
+          </button>
+        ))}
       </div>
 
       {loading && (
@@ -134,32 +195,51 @@ export default function Projects() {
         </div>
       )}
 
-      {!loading && filteredProjects.length === 0 && (
+      {!loading && projects.length === 0 && (
         <div className="text-center py-12">
-          <p className="text-gray-500">No projects found in this category.</p>
+          <p className="text-gray-500 mb-4">No projects found matching your criteria.</p>
+          <button 
+            className="text-[#917b53] hover:underline"
+            onClick={() => {
+              setSelectedCategory(null);
+              setSearchTerm("");
+            }}
+          >
+            Clear filters
+          </button>
         </div>
       )}
 
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {filteredProjects.map((project) => (
+        {projects.map((project) => (
           <div key={project.id} className="group relative overflow-hidden rounded-lg shadow-lg">
             <div className="aspect-w-16 aspect-h-9">
               <img
-                src={project.imageUrl || '/assets/projects/placeholder.jpg'}
+                src={project.imageUrl}
                 alt={project.title}
                 className="object-cover w-full h-full transition-transform duration-300 group-hover:scale-110"
               />
             </div>
             <div className="absolute inset-0 bg-black/60 flex flex-col justify-end p-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
               <h3 className="text-white text-xl font-semibold mb-2">{project.title}</h3>
-              <p className="text-white/80">{project.description}</p>
-              <div className="flex justify-between items-center mt-2">
+              <p className="text-white/80 mb-4">{project.description}</p>
+              <div className="flex justify-between items-center">
                 <span className="text-white/60 uppercase text-sm">{project.category}</span>
                 <span className="text-white/60 text-sm">{project.location}, {project.year}</span>
               </div>
             </div>
           </div>
         ))}
+      </div>
+      
+      <div className="mt-16 text-center">
+        <h2 className="text-2xl font-semibold mb-6">Ready to start your project?</h2>
+        <p className="text-gray-600 mb-8 max-w-2xl mx-auto">
+          Whether you're looking to restore a historic property or create custom woodwork for your home, our team of expert craftsmen is ready to bring your vision to life.
+        </p>
+        <Link href="/contact" className="inline-block bg-[#917b53] text-white py-3 px-8 hover:bg-[#917b53]/90 transition">
+          Get in Touch
+        </Link>
       </div>
     </div>
   );
