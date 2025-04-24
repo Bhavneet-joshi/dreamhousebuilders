@@ -6,6 +6,7 @@ import AboutSection from "@/components/AboutSection";
 import ContactSection from "@/components/ContactSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import MostRequestedServices from "@/components/MostRequestedServices";
 import { useEffect } from "react";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       <HeroSection />
       <IntroSection />
       <StatsSection />
+      <MostRequestedServices />
       <ProjectShowcase />
       <WhyChooseUsSection />
       <TestimonialsSection />
