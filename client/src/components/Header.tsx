@@ -14,7 +14,12 @@ const navigationItems = [
   },
   {
     name: "PROJECTS",
-    path: "/projects"
+    path: "/projects",
+    dropdown: [
+      { name: "Commercial", path: "/projects#commercial" },
+      { name: "Residential", path: "/projects#residential" },
+      { name: "Industrial", path: "/projects#industrial" }
+    ]
   },
   {
     name: "CONTACT",
@@ -76,13 +81,13 @@ export default function Header() {
               <button className="flex items-center justify-between w-full">
                 {item.name} <span className="ml-2 w-1 h-1 rounded-full bg-[#232323]"></span>
               </button>
-              {item.dropdown && (
-                <div className="absolute top-full left-0 w-48 bg-white shadow-lg py-2 hidden group-hover:block">
+              {activeDropdown === item.name && (
+                <div className="absolute left-0 top-full bg-[#f5f2eb] min-w-[160px] shadow-md z-10">
                   {item.dropdown.map((dropdownItem) => (
-                    <Link
-                      key={dropdownItem.path}
-                      href={dropdownItem.path}
-                      className="block px-4 py-2 text-sm hover:bg-gray-100"
+                    <Link 
+                      key={dropdownItem.path} 
+                      href={dropdownItem.path} 
+                      className="block py-2 px-4 hover:bg-[#917b53]/10"
                     >
                       {dropdownItem.name}
                     </Link>
@@ -106,7 +111,7 @@ export default function Header() {
                 </button>
                 {activeDropdown === item.name && (
                   <div className="bg-[#f5f2eb] pl-8">
-                    {item.dropdown?.map((dropdownItem) => (
+                    {item.dropdown.map((dropdownItem) => (
                       <Link 
                         key={dropdownItem.path} 
                         href={dropdownItem.path} 
