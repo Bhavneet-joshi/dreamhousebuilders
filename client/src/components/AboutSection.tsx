@@ -1,4 +1,4 @@
-import { Linkedin, Twitter, Instagram, Facebook } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 
 export default function AboutSection() {
   const socialLinks = [

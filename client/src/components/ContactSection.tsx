@@ -149,9 +149,7 @@ export default function ContactSection() {
             <h3 className="font-medium mb-4">CONTACT US</h3>
             <p className="mb-4">dreamhousebuilders@outlook.co.nz</p>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-[#917b53] transition">LINKEDIN</a>
-              <a href="#" className="hover:text-[#917b53] transition">TWITTER</a>
-              <a href="#" className="hover:text-[#917b53] transition">FACEBOOK</a>
+              <a href="https://www.facebook.com/dream.house.builders.ltd" target="_blank" rel="noopener noreferrer" className="hover:text-[#917b53] transition">FACEBOOK</a>
             </div>
           </div>
         </div>
