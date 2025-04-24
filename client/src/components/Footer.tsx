@@ -6,7 +6,14 @@ export default function Footer() {
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="font-semibold mb-4">DREAM HOUSE BUILDERS LTD</h3>
+            <div className="flex items-center mb-4">
+              <img 
+                src="/attached_assets/logo.png" 
+                alt="Dream House Builders Logo" 
+                className="h-6 w-auto mr-3"
+              />
+              <h3 className="font-semibold">DREAM HOUSE BUILDERS LTD</h3>
+            </div>
             <p className="text-sm leading-relaxed">
               Creating iconic buildings and spaces that transform cities and improve lives through thoughtful, sustainable design.
             </p>

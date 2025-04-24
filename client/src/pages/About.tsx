@@ -40,7 +40,7 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-5">
               <img 
-                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1174&q=80" 
+                src="attached_assets/w1.jpg"
                 alt="DREAM HOUSE BUILDERS LTD craftsmanship" 
                 className="w-full h-auto"
               />

@@ -66,8 +66,13 @@ export default function Header() {
         <nav className="grid grid-cols-12 border-b border-[rgba(0,0,0,0.1)]">
           {/* Logo */}
           <div className="col-span-6 md:col-span-3 py-4 px-6 border-r border-[rgba(0,0,0,0.1)] flex items-center">
-            <Link href="/" className="font-semibold">
-              DREAM HOUSE BUILDERS LTD
+            <Link href="/" className="flex items-center">
+              <img 
+                src="/attached_assets/logo.png" 
+                alt="Dream House Builders Logo" 
+                className="h-8 w-auto mr-3"
+              />
+              <span className="font-semibold hidden sm:inline">DREAM HOUSE BUILDERS LTD</span>
             </Link>
           </div>
 

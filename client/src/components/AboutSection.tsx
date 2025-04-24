@@ -10,7 +10,7 @@ export default function AboutSection() {
     <section className="grid grid-cols-1 md:grid-cols-12 border-b border-[rgba(0,0,0,0.1)]">
       <div className="md:col-span-5 h-96 md:h-auto relative">
         <img 
-          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1174&q=80" 
+          src="attached_assets/w3.jpg"
           alt="Hand-carved woodwork detail" 
           className="w-full h-full object-cover"
         />

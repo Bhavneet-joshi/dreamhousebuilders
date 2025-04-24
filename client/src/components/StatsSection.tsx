@@ -10,13 +10,13 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
-    value: 25,
+    value: 1,
     label: "MASTER CRAFTSMEN",
     description: "Skilled artisans and master carpenters on our team. Our expert craftsmen bring decades of combined experience in period-accurate restoration and fine woodworking.",
     duration: 2000
   },
   {
-    value: 500,
+    value: 70,
     label: "RESTORATIONS",
     description: "Successful historic home restoration projects completed. From hand-carved woodwork to structural repairs, we've preserved the character of countless heritage spaces.",
     duration: 1500
