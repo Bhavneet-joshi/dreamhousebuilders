@@ -10,27 +10,27 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
-    value: 40,
-    label: "PROFESSIONALS",
-    description: "Skilled professionals on our team. Our team brings together many professionals ready to take on any size challenge. We create a team that inspires trust.",
+    value: 25,
+    label: "MASTER CRAFTSMEN",
+    description: "Skilled artisans and master carpenters on our team. Our expert craftsmen bring decades of combined experience in period-accurate restoration and fine woodworking.",
     duration: 2000
   },
   {
-    value: 8,
-    label: "AWARDS",
-    description: "Construction quality awards. Our commitment has been recognized with awards and certifications. We are constantly working to improve and refine our projects.",
+    value: 500,
+    label: "RESTORATIONS",
+    description: "Successful historic home restoration projects completed. From hand-carved woodwork to structural repairs, we've preserved the character of countless heritage spaces.",
     duration: 1500
   },
   {
-    value: 12,
-    label: "CITIES",
-    description: "Cities where we have left our mark. Our construction achievements span more than 62 cities. We are committed to contributing to the cities development.",
+    value: 1,
+    label: "YEAR",
+    description: "Year of excellence in heritage restoration and artisan carpentry since our founding in 2023. Our commitment to historical integrity has quickly made us a trusted name in home restoration.",
     duration: 1700
   },
   {
-    value: 98,
+    value: 99,
     label: "PERCENT",
-    description: "Satisfied customers. Our commitment to service excellence is reflected in our customer satisfaction levels. Your satisfaction is our priority.",
+    description: "Satisfied customers. Our meticulous attention to detail and respect for historical authenticity ensures that every restoration project meets the highest standards of craftsmanship.",
     duration: 1800
   }
 ];

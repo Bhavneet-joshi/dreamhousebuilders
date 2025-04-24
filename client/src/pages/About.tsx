@@ -16,18 +16,18 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <p className="mb-4 text-lg">
-                DREAM HOUSE BUILDERS LTD is an architectural studio that designs spaces that inspire. Established with a vision to transform the construction industry, we have grown to become a leading name in architectural innovation and excellence.
+                DREAM HOUSE BUILDERS LTD is a specialized restoration and artisan carpentry studio that brings new life to historic homes. Founded in 2023, we combine traditional craftsmanship with modern expertise to preserve the beauty and character of heritage properties.
               </p>
               <p className="mb-4">
-                Our journey began with a simple yet powerful idea: to create buildings that are not only functional and aesthetically pleasing but also environmentally responsible and ‪+64 210520060ly impactful. Today, we stand as a testament to that vision, with a portfolio of iconic projects across 62 cities worldwide.
+                Our journey began with a simple yet powerful idea: to restore historic homes with meticulous attention to detail and respect for their original character. Today, we stand as a testament to that vision, with a growing portfolio of successful restoration projects that honor the past while enhancing functionality.
               </p>
             </div>
             <div>
               <p className="mb-4">
-                With a team of 40 professionals who bring diverse expertise and perspectives, we tackle projects of all sizes with the same level of dedication and creativity. Our approach is collaborative, our methods innovative, and our results exceptional.
+                With a team of master craftsmen who bring decades of combined experience in period-accurate restoration and fine woodworking, we tackle projects of all sizes with the same level of dedication and precision. Our approach is collaborative, our methods time-tested, and our results exceptional.
               </p>
               <p>
-                We believe that architecture has the power to transform lives, shape communities, and create a better future for all. This belief guides our work and inspires us to push the boundaries of what's possible in construction and design.
+                We believe that historic homes have stories to tell, and our mission is to preserve those stories through expert restoration and artisan carpentry. This belief guides our work and inspires us to maintain the highest standards of craftsmanship in every project we undertake.
               </p>
             </div>
           </div>
@@ -40,35 +40,35 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-12 gap-8">
             <div className="md:col-span-5">
               <img 
-                src="https://images.unsplash.com/photo-1542621334-a254cf47733d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1170&q=80" 
-                alt="DREAM HOUSE BUILDERS LTD history" 
+                src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1174&q=80" 
+                alt="DREAM HOUSE BUILDERS LTD craftsmanship" 
                 className="w-full h-auto"
               />
             </div>
             <div className="md:col-span-7">
               <div className="space-y-6">
                 <div>
-                  <h3 className="text-xl font-medium mb-2">FOUNDED IN 1995</h3>
+                  <h3 className="text-xl font-medium mb-2">FOUNDED IN 2023</h3>
                   <p>
-                    DREAM HOUSE BUILDERS LTD was founded by a group of visionary architects who wanted to challenge conventional approaches to construction and design. Starting with small residential projects, we quickly gained recognition for our innovative solutions and attention to detail.
+                    DREAM HOUSE BUILDERS LTD was founded by a team of master craftsmen with a shared passion for historic preservation and fine woodworking. Starting with small restoration projects, we quickly gained recognition for our attention to detail and respect for historical integrity.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium mb-2">INTERNATIONAL EXPANSION</h3>
+                  <h3 className="text-xl font-medium mb-2">EXPERTISE IN HERITAGE RESTORATION</h3>
                   <p>
-                    By 2005, we had expanded our operations beyond our home market, taking on projects in Europe, the Middle East, and Asia. This international presence allowed us to incorporate diverse cultural influences into our designs and develop a global perspective on architecture.
+                    Our team brings together decades of combined experience in period-accurate restoration, traditional woodworking techniques, and historical preservation. This expertise allows us to tackle even the most challenging restoration projects with confidence and precision.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-xl font-medium mb-2">SUSTAINABILITY COMMITMENT</h3>
+                  <h3 className="text-xl font-medium mb-2">COMMITMENT TO CRAFTSMANSHIP</h3>
                   <p>
-                    In 2010, we made a formal commitment to sustainability, pledging to incorporate environmentally responsible practices into all our projects. This commitment has led to numerous awards and recognitions for our eco-friendly designs.
+                    From the beginning, we made a formal commitment to excellence in craftsmanship, pledging to use traditional techniques and high-quality materials in all our restoration work. This commitment has earned us a reputation for delivering exceptional results that honor the past.
                   </p>
                 </div>
                 <div>
                   <h3 className="text-xl font-medium mb-2">TODAY</h3>
                   <p>
-                    Today, DREAM HOUSE BUILDERS LTD stands as a global leader in architectural innovation, with offices in Australia, the Middle East, United Kingdom, and Canada. Our portfolio spans residential, commercial, industrial, and public projects, each reflecting our commitment to excellence, sustainability, and positive ‪+64 210520060 impact.
+                    Today, DREAM HOUSE BUILDERS LTD stands as a trusted name in historic home restoration and artisan carpentry. Our portfolio includes successful restoration projects that have breathed new life into heritage properties while preserving their character and historical significance.
                   </p>
                 </div>
               </div>
@@ -86,8 +86,8 @@ export default function About() {
             {[
               {
                 name: "Harpreet Singh",
-                position: "CEO & Founder",
-                bio: "With over 25 years of experience in architecture and construction, Alexander leads our global operations with a focus on innovation and sustainability."
+                position: "Founder & Master Craftsman",
+                bio: "With over 25 years of experience in restoration and fine woodworking, Harpreet leads our team with a focus on craftsmanship and historical authenticity."
               }
             ].map((member, index) => (
               <div key={index} className="border border-[rgba(0,0,0,0.1)] p-6">
@@ -112,28 +112,28 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
             {[
               {
-                title: "Architectural Design",
-                description: "Comprehensive architectural services from concept development to detailed design, creating spaces that are both functional and aesthetically pleasing."
+                title: "Historic Home Restoration",
+                description: "Comprehensive restoration services for historic homes, preserving original character while updating functionality for modern living."
               },
               {
-                title: "Construction Management",
-                description: "End-to-end management of construction projects, ensuring timely delivery, cost-effectiveness, and adherence to quality standards."
+                title: "Period-Accurate Woodworking",
+                description: "Expert carpentry that matches the style and techniques of the original period, ensuring seamless repairs and additions."
               },
               {
-                title: "Sustainability Consulting",
-                description: "Expert advice on sustainable building practices, energy efficiency, and environmental certification for new and existing structures."
+                title: "Custom Furniture Restoration",
+                description: "Meticulous restoration of antique and period furniture, bringing cherished pieces back to their former glory."
               },
               {
-                title: "Urban Planning",
-                description: "Strategic planning for urban developments, balancing aesthetic, functional, and ‪+64 210520060 considerations to create vibrant communities."
+                title: "Structural Repairs",
+                description: "Skilled repairs to maintain the structural integrity of historic homes while preserving their architectural heritage."
               },
               {
-                title: "Interior Design",
-                description: "Thoughtful interior design that enhances the functionality and ambiance of spaces, reflecting the unique character of each project."
+                title: "Interior Woodwork",
+                description: "Custom interior woodwork including trim, moldings, and built-ins that match the style and craftsmanship of historic homes."
               },
               {
-                title: "Renovation & Restoration",
-                description: "Skilled renovation of existing structures and restoration of historic buildings, preserving architectural heritage while updating functionality."
+                title: "Heritage Preservation",
+                description: "Expert guidance on preserving the historical significance of your property while making necessary updates for modern living."
               }
             ].map((service, index) => (
               <div key={index} className="relative pl-10">
@@ -154,28 +154,28 @@ export default function About() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             <div>
               <p className="mb-6">
-                Our approach to architecture and construction is built on four key pillars: Collaboration, Innovation, Sustainability, and Excellence. We believe that the best results come from working closely with our clients, embracing new ideas and technologies, respecting the environment, and maintaining the highest standards in everything we do.
+                Our approach to restoration and carpentry is built on four key pillars: Historical Accuracy, Craftsmanship, Sustainability, and Excellence. We believe that the best results come from respecting the original design, using traditional techniques, choosing environmentally responsible materials, and maintaining the highest standards in everything we do.
               </p>
               <p>
-                Each project begins with a deep understanding of our client's vision and needs. We then apply our expertise and creativity to develop solutions that not only meet but exceed expectations. Throughout the process, we maintain open communication and transparency, ensuring that our clients are partners in the journey from concept to completion.
+                Each project begins with a thorough assessment of the property's historical significance and current condition. We then apply our expertise to develop restoration plans that preserve the original character while addressing necessary updates. Throughout the process, we maintain open communication with our clients, ensuring they are partners in the journey from assessment to completion.
               </p>
             </div>
             <div className="space-y-4">
               <div className="border-l-4 border-[#917b53] pl-6">
-                <h3 className="text-xl font-semibold mb-2">Collaboration</h3>
-                <p>We work closely with clients, stakeholders, and communities to create buildings that truly serve their users.</p>
+                <h3 className="text-xl font-semibold mb-2">Historical Accuracy</h3>
+                <p>We research and respect the original design and construction methods to ensure period-accurate restoration.</p>
               </div>
               <div className="border-l-4 border-[#917b53] pl-6">
-                <h3 className="text-xl font-semibold mb-2">Innovation</h3>
-                <p>We embrace new technologies, materials, and methods to push the boundaries of what's possible in construction.</p>
+                <h3 className="text-xl font-semibold mb-2">Craftsmanship</h3>
+                <p>We employ traditional woodworking techniques and master craftsmen to deliver exceptional results.</p>
               </div>
               <div className="border-l-4 border-[#917b53] pl-6">
                 <h3 className="text-xl font-semibold mb-2">Sustainability</h3>
-                <p>We design with the future in mind, creating buildings that minimize environmental impact and maximize efficiency.</p>
+                <p>We choose environmentally responsible materials and methods that respect both the past and the future.</p>
               </div>
               <div className="border-l-4 border-[#917b53] pl-6">
                 <h3 className="text-xl font-semibold mb-2">Excellence</h3>
-                <p>We are committed to the highest standards of quality, craftsmanship, and professional service.</p>
+                <p>We are committed to the highest standards of quality, attention to detail, and professional service.</p>
               </div>
             </div>
           </div>

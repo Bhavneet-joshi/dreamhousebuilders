@@ -10,14 +10,14 @@ export default function AboutSection() {
     <section className="grid grid-cols-1 md:grid-cols-12 border-b border-[rgba(0,0,0,0.1)]">
       <div className="md:col-span-5 h-96 md:h-auto relative">
         <img 
-          src="https://images.unsplash.com/photo-1711856168274-01d7f22fd847?q=80&w=2034&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
-          alt="Building exterior" 
+          src="https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1174&q=80" 
+          alt="Hand-carved woodwork detail" 
           className="w-full h-full object-cover"
         />
       </div>
       <div className="md:col-span-7 p-8 md:p-12">
-        <h2 className="text-2xl font-semibold mb-8">
-          WE ARE COMMITTED TO CREATING BUILDINGS THAT ARE NOT ONLY FUNCTIONAL AND AESTHETICALLY PLEASING.
+        <h2 className="text-2xl font-semibold mb-8 text-[#917b53]">
+          WE ARE DEDICATED TO PRESERVING HERITAGE THROUGH METICULOUS CRAFTSMANSHIP AND ATTENTION TO DETAIL.
         </h2>
         
         <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8">
@@ -25,11 +25,11 @@ export default function AboutSection() {
           <div className="md:col-span-8">
             <div className="mb-6">
               <span className="text-xs">(01)</span>
-              <p>DREAM HOUSE BUILDERS LTD IS AN ARCHITECTURAL STUDIO THAT DESIGNS SPACES THAT INSPIRE.</p>
+              <p>FOUNDED IN 2023, DREAM HOUSE BUILDERS LTD SPECIALIZES IN HISTORIC HOME RESTORATION AND BESPOKE CARPENTRY THAT HONORS THE PAST.</p>
             </div>
             <div className="mb-6">
               <span className="text-xs">(02)</span>
-              <p>WE BELIEVE THAT ARCHITECTURE HAS THE POWER TO TRANSFORM LIVES</p>
+              <p>DESPITE BEING A NEW COMPANY, OUR TEAM OF MASTER CRAFTSMEN BRINGS DECADES OF COMBINED EXPERIENCE IN PERIOD-ACCURATE RESTORATION AND FINE WOODWORKING.</p>
             </div>
           </div>
           
@@ -37,7 +37,7 @@ export default function AboutSection() {
           <div className="md:col-span-8">
             <div className="mb-6">
               <span className="text-xs">(03)</span>
-              <p>WE ARE COMMITTED TO CREATING BUILDINGS THAT ARE NOT ONLY FUNCTIONAL AND AESTHETICALLY PLEASING</p>
+              <p>WE COMBINE TRADITIONAL WOODWORKING TECHNIQUES WITH MODERN EXPERTISE TO DELIVER EXCEPTIONAL RESULTS, RESPECTING THE HISTORICAL INTEGRITY OF EACH PROJECT.</p>
             </div>
           </div>
           
@@ -45,7 +45,7 @@ export default function AboutSection() {
           <div className="md:col-span-8">
             <div className="mb-6">
               <span className="text-xs">(04)</span>
-              <p>OUR MISSION IS TO USE OUR CREATIVITY AND EXPERTISE TO DESIGN SPACES THAT MAKE A POSITIVE IMPACT ON THE WORLD</p>
+              <p>OUR MISSION IS TO PRESERVE THE BEAUTY AND CHARACTER OF HISTORIC HOMES THROUGH METICULOUS RESTORATION AND EXPERT CARPENTRY, BUILDING OUR REPUTATION ONE PROJECT AT A TIME.</p>
             </div>
           </div>
           
