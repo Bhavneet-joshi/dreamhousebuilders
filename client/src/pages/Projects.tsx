@@ -9,7 +9,7 @@ const fallbackProjects: Project[] = [
     title: "Victorian Manor Restoration",
     category: "Historic Restoration",
     description: "Complete restoration of a 19th-century Victorian manor, including period-accurate woodwork, detailed trim restoration, and historical color matching.",
-    imageUrl: "/attached_assets/m1.jpg",
+    imageUrl: "attached_assets/m1.jpg",
     location: "Auckland, New Zealand",
     year: 2023,
     featured: true
@@ -19,7 +19,7 @@ const fallbackProjects: Project[] = [
     title: "Heritage Staircase Reconstruction",
     category: "Custom Woodwork",
     description: "Hand-crafted reproduction of a heritage staircase, featuring intricate balustrades and custom millwork to match the original 1920s design.",
-    imageUrl: "/attached_assets/m2.jpg",
+    imageUrl: "attached_assets/m2.jpg",
     location: "Wellington, New Zealand",
     year: 2023,
     featured: true
@@ -29,7 +29,7 @@ const fallbackProjects: Project[] = [
     title: "Antique Furniture Collection",
     category: "Furniture Restoration",
     description: "Meticulous restoration of a collection of 18th-century furniture pieces, including detailed veneer work and traditional finishing techniques.",
-    imageUrl: "/attached_assets/m3.jpg",
+    imageUrl: "attached_assets/m3.jpg",
     location: "Christchurch, New Zealand",
     year: 2023,
     featured: true
@@ -39,7 +39,7 @@ const fallbackProjects: Project[] = [
     title: "Colonial Homestead Revival",
     category: "Historic Restoration",
     description: "Comprehensive restoration of a colonial-era homestead, including structural timber repairs and authentic period detailing.",
-    imageUrl: "/attached_assets/m4.jpg",
+    imageUrl: "attached_assets/m4.jpg",
     location: "Hamilton, New Zealand",
     year: 2023,
     featured: false
@@ -49,7 +49,7 @@ const fallbackProjects: Project[] = [
     title: "Bespoke Library Installation",
     category: "Custom Woodwork",
     description: "Custom-designed and hand-crafted floor-to-ceiling library with traditional joinery techniques and built-in ladder system.",
-    imageUrl: "/attached_assets/m5.jpg",
+    imageUrl: "attached_assets/m5.jpg",
     location: "Dunedin, New Zealand",
     year: 2023,
     featured: false
@@ -59,7 +59,7 @@ const fallbackProjects: Project[] = [
     title: "Heritage Window Restoration",
     category: "Architectural Elements",
     description: "Restoration of original sash windows and frames in a heritage-listed building, including custom molding reproduction and glazing.",
-    imageUrl: "/attached_assets/m6.jpg",
+    imageUrl: "attached_assets/m6.jpg",
     location: "Tauranga, New Zealand",
     year: 2023,
     featured: false
@@ -69,7 +69,7 @@ const fallbackProjects: Project[] = [
     title: "Period Door Refinishing",
     category: "Architectural Elements",
     description: "Expert refinishing of original period doors, including hardware restoration and custom panel repair.",
-    imageUrl: "/attached_assets/m7.jpg",
+    imageUrl: "attached_assets/m7.jpg",
     location: "Napier, New Zealand",
     year: 2023,
     featured: false
@@ -79,7 +79,7 @@ const fallbackProjects: Project[] = [
     title: "Historic Fireplace Restoration",
     category: "Historic Restoration",
     description: "Complete restoration of a Victorian-era fireplace, including tile repair, mantel refinishing, and flue inspection.",
-    imageUrl: "/attached_assets/m8.jpg",
+    imageUrl: "attached_assets/m8.jpg",
     location: "Nelson, New Zealand",
     year: 2023,
     featured: false
@@ -89,7 +89,7 @@ const fallbackProjects: Project[] = [
     title: "Custom Kitchen Cabinetry",
     category: "Custom Woodwork",
     description: "Hand-crafted kitchen cabinetry with traditional joinery techniques and custom hardware selection.",
-    imageUrl: "/attached_assets/m9.jpg",
+    imageUrl: "attached_assets/m9.jpg",
     location: "Whangarei, New Zealand",
     year: 2023,
     featured: false
@@ -99,7 +99,7 @@ const fallbackProjects: Project[] = [
     title: "Antique Table Restoration",
     category: "Furniture Restoration",
     description: "Complete restoration of a family heirloom dining table, including leg repair, surface refinishing, and extension mechanism overhaul.",
-    imageUrl: "/attached_assets/m10.jpg",
+    imageUrl: "attached_assets/m10.jpg",
     location: "Palmerston North, New Zealand",
     year: 2023,
     featured: false

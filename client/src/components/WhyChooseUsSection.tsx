@@ -1,4 +1,4 @@
-import { Tool, Award, Clock, Shield, Heart, Users } from "lucide-react";
+import { Wrench, Trophy, Clock, Shield, Heart, Users } from "lucide-react";
 
 interface Feature {
   id: number;
@@ -13,13 +13,13 @@ export default function WhyChooseUsSection() {
       id: 1,
       title: "Expert Craftsmanship",
       description: "Our team of master craftsmen brings decades of combined experience in period-accurate restoration and fine woodworking.",
-      icon: <Tool className="w-8 h-8 text-[#917b53]" />
+      icon: <Wrench className="w-8 h-8 text-[#917b53]" />
     },
     {
       id: 2,
       title: "Quality Guaranteed",
       description: "We stand behind the quality of our work with comprehensive guarantees and warranties on all our restoration and woodwork projects.",
-      icon: <Award className="w-8 h-8 text-[#917b53]" />
+      icon: <Trophy className="w-8 h-8 text-[#917b53]" />
     },
     {
       id: 3,

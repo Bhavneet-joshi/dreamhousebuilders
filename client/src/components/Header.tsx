@@ -27,9 +27,9 @@ const navigationItems: NavigationItem[] = [
     name: "PROJECTS",
     path: "/projects",
     dropdown: [
-      { name: "Commercial", path: "/projects#commercial" },
-      { name: "Residential", path: "/projects#residential" },
-      { name: "Industrial", path: "/projects#industrial" }
+      { name: "Custom Woodwork", path: "/projects#custom-woodwork" },
+      { name: "Furniture Restoration", path: "/projects#furniture-restoration" },
+      { name: "Historic Restoration", path: "/projects#historic-restoration" }
     ]
   },
   {
