@@ -5,12 +5,12 @@ const mostRequestedServices = [
     id: 1,
     title: "New Build",
     description: "Custom-designed homes built to your specifications with quality materials and expert craftsmanship.",
-    image: "/attached_assets/m18.jpg"
+    image: "/attached_assets/m5.jpg"
   },
   {
     id: 2,
-    title: "Full House Renovation",
-    description: "Complete home transformations that breathe new life into your existing space.",
+    title: "Cladding",
+    description: "Professional cladding services to protect and modernize your home's exterior.",
     image: "/attached_assets/m2.jpg"
   },
   {
@@ -27,9 +27,9 @@ const mostRequestedServices = [
   },  
   {
     id: 5,
-    title: "Gibbing",
-    description: "Expert installation of plasterboard for walls and ceilings.",
-    image: "/attached_assets/m5.jpg"
+    title: "Retaining Walls",
+    description: "Expert installation of retaining walls for a modern, elegant look.",
+    image: "/attached_assets/m1.jpg"
   },
   {
     id: 6,
