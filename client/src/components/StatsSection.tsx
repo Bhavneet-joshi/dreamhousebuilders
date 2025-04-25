@@ -10,7 +10,7 @@ interface StatItem {
 
 const stats: StatItem[] = [
   {
-    value: 1,
+    value: 10,
     label: "MASTER CRAFTSMEN",
     description: "Skilled artisans and master carpenters on our team. Our expert craftsmen bring decades of combined experience in period-accurate restoration and fine woodworking.",
     duration: 2000

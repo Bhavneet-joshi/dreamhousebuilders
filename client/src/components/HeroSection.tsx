@@ -9,7 +9,8 @@ export default function HeroSection() {
           ARTISAN CARPENTRY & TIMELESS RESTORATION
         </h1>
         <p className="text-xl mb-6 text-[#917b53]">
-          Breathing new life into historic homes with master craftsmanship
+        Breathing New Life Into Homes
+        With Master Craftsmanship | Qualified Licensed Building Practitioner
         </p>
         <div className="mt-auto">
           <Link href="/contact" className="block bg-[#917b53] text-white py-4 px-6 text-center hover:bg-[#917b53]/90 transition">
