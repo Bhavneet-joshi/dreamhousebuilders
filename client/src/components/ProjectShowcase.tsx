@@ -6,30 +6,30 @@ export default function ProjectShowcase() {
   const [projects] = useState<Project[]>([
     {
       id: 1,
-      title: "Victorian Manor Restoration",
+      title: "House Restoration",
       description: "Complete restoration of a 19th-century Victorian manor with period-accurate woodwork",
       category: "Historic Restoration",
-      imageUrl: "/attached_assets/m1.jpg",
+      imageUrl: "/attached_assets/m5.jpg",
       location: "Auckland, New Zealand",
       year: 2023,
       featured: true
     },
     {
       id: 2,
-      title: "Heritage Staircase Reconstruction",
+      title: "Staircase Reconstruction",
       description: "Hand-crafted reproduction of a heritage staircase with intricate balustrades",
       category: "Custom Woodwork",
-      imageUrl: "/attached_assets/m2.jpg",
+      imageUrl: "/attached_assets/m4.jpg",
       location: "Wellington, New Zealand",
       year: 2023,
       featured: true
     },
     {
       id: 3,
-      title: "Antique Furniture Collection",
-      description: "Meticulous restoration of a collection of 18th-century furniture pieces",
+      title: "Bathroom Renovation",
+      description: "Modern bathroom upgrades with premium fixtures and finishes.",
       category: "Furniture Restoration",
-      imageUrl: "/attached_assets/m3.jpg",
+      imageUrl: "/attached_assets/m11.jpg",
       location: "Christchurch, New Zealand",
       year: 2023,
       featured: true
