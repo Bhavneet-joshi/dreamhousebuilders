@@ -5,7 +5,7 @@ const mostRequestedServices = [
     id: 1,
     title: "New Build",
     description: "Custom-designed homes built to your specifications with quality materials and expert craftsmanship.",
-    image: "/attached_assets/m1.jpg"
+    image: "/attached_assets/m18.jpg"
   },
   {
     id: 2,
@@ -17,14 +17,14 @@ const mostRequestedServices = [
     id: 3,
     title: "Bathroom Renovation",
     description: "Modern bathroom upgrades with premium fixtures and finishes.",
-    image: "/attached_assets/m3.jpg"
+    image: "/attached_assets/m11.jpg"
   },
   {
     id: 4,
-    title: "Painting",
-    description: "Professional interior and exterior painting services for a fresh, new look.",
+    title: "Stairs",
+    description: "Custom stair design and installation for safe and stylish access between levels.",
     image: "/attached_assets/m4.jpg"
-  },
+  },  
   {
     id: 5,
     title: "Gibbing",
@@ -33,27 +33,15 @@ const mostRequestedServices = [
   },
   {
     id: 6,
-    title: "Decking",
-    description: "Custom deck construction and maintenance for outdoor living spaces.",
-    image: "/attached_assets/m6.jpg"
-  },
-  {
-    id: 7,
-    title: "Pergola",
-    description: "Beautiful pergola installations to enhance your outdoor entertainment area.",
-    image: "/attached_assets/m7.jpg"
-  },
-  {
-    id: 8,
-    title: "Reclading",
-    description: "Professional house recladding services to protect and beautify your home.",
-    image: "/attached_assets/m8.jpg"
-  },
-  {
-    id: 9,
     title: "Wooden Flooring",
     description: "Installation of high-quality wooden flooring for a timeless, elegant look.",
     image: "/attached_assets/m9.jpg"
+  },
+  {
+    id: 7,
+    title: "Fencing",
+    description: "Durable and attractive fencing solutions to enhance privacy and security for your property.",
+    image: "/attached_assets/m12.jpg"
   }
 ];
 

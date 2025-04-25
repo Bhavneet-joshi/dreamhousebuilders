@@ -20,7 +20,7 @@ export default function HeroSection() {
       </div>
       <div className="relative h-96 md:h-auto overflow-hidden">
         <img 
-          src="attached_assets/w2.jpg"
+          src="attached_assets/m16.jpg"
           alt="Master carpenter at work" 
           className="w-full h-full object-cover"
         />
