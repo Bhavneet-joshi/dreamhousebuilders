@@ -35,7 +35,7 @@ const mostRequestedServices = [
     id: 6,
     title: "Wooden Flooring",
     description: "Installation of high-quality wooden flooring for a timeless, elegant look.",
-    image: "/attached_assets/m9.jpg"
+    image: "/attached_assets/w2.jpg"
   },
   {
     id: 7,
