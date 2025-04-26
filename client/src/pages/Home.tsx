@@ -25,6 +25,17 @@ export default function Home() {
       <TestimonialsSection />
       <AboutSection />
       <ContactSection />
+      <section className="py-12 border-t border-[rgba(0,0,0,0.1)]">
+        <div className="container mx-auto px-6">
+          <h2 className="text-2xl font-bold mb-8 text-center">Our Building Partners</h2>
+          <div className="flex flex-wrap justify-center gap-8">
+            <img src="/attached_assets/a1.png" alt="Partner 1" className="h-24 w-auto object-contain" />
+            <img src="/attached_assets/a2.png" alt="Partner 2" className="h-24 w-auto object-contain" />
+            <img src="/attached_assets/a3.jpg" alt="Partner 3" className="h-24 w-auto object-contain" />
+            <img src="/attached_assets/a3.png" alt="Partner 4" className="h-24 w-auto object-contain" />
+          </div>
+        </div>
+      </section>
     </>
   );
 }
