@@ -22,9 +22,9 @@ const stats: StatItem[] = [
     duration: 1500
   },
   {
-    value: 1,
-    label: "YEAR",
-    description: "Year of excellence in heritage restoration and artisan carpentry since our founding in 2023. Our commitment to historical integrity has quickly made us a trusted name in home restoration.",
+    value: 11,
+    label: "YEARS EXPERIENCE",
+    description: "Years of hands-on experience our craftsmen bring to every project. While our company was founded in 2023, our team's expertise in heritage restoration and artisan carpentry spans over a decade, ensuring exceptional results from day one.",
     duration: 1700
   },
   {
